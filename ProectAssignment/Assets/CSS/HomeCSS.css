@@ -1,0 +1,174 @@
+﻿body {
+}
+
+.table {
+    margin-top: 70px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.table1 {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.label1, .label2, .label3, .label4 {
+    font-family:Arial;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    font-size:20px;
+}
+
+.img1:hover .label1 {
+    visibility: visible;
+    opacity: 1;
+}
+.img2:hover .label2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img3:hover .label3 {
+    visibility: visible;
+    opacity: 1;
+}
+.img4:hover .label4 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.bottom {
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    background-color: #B3B6B7;
+    text-align: center;
+    font-family: montserrat,Helvetica,Arial,sans-serif;
+    color: #626567;
+    font-size:10px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: 80px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 60px;
+    font-family: Arial;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 45%;
+    width: 100%;
+    text-align: center;
+}
+/* Caption text */
+.text2 {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+.link {
+    position: absolute;
+    font-size: 20px;
+    font-family: Arial;
+    border: solid 2px;
+    bottom: 20%;
+    height: 27px;
+    width: 200px;
+    margin-left: 43.3%;
+    background-color: white;
+    color: black;
+    border-color: black;
+    text-align: center;
+    padding: 9px 5px 5px 5px;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: black;
+    color: white;
+    animation:fade;
+    animation-duration: 1.5s;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+

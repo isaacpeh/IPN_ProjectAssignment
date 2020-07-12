@@ -1,0 +1,85 @@
+﻿body {
+}
+
+.boxbox {
+    margin: auto;
+    width: 600px;
+    height: 540px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.HLusername {
+    float: right;
+    margin-top: 30px;
+    margin-right: 55px;
+    color: darkgray;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+.HLregister {
+    float: left;
+    margin-top: 30px;
+    margin-left: 55px;
+    color: darkgray;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.HLusername:hover, .HLregister:hover {
+    color: red;
+}
+
+.boxbox3 {
+    background-color: #ffb3b3;
+    height: 47px;
+    width: 280px;
+    margin-top: 30px;
+    margin-left: 165px;
+    font-size: small;
+}
+
+.btnReg {
+    background-color: #424949;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 260px;
+    margin-left:10px;
+}
+
+.boxbox2 {
+    margin-top: 10px;
+}
+
+.lblusername, .lblpassword, .lblconfirm {
+    float: left;
+    color: #626567;
+    margin-left: 142px;
+}
+
+.UserName {
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-left: 12px;
+    height: 30px;
+    width: 300px;
+}
+
+.Password {
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-left: 12px;
+    height: 30px;
+    width: 300px;
+}
+
+.ConfirmPassword {
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-left: 12px;
+    height: 30px;
+    width: 300px;
+}

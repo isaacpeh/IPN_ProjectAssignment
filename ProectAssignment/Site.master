@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <link href="/Assets/CSS/sitemaster.css" rel="stylesheet" type="text/css" media="all"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %>- My ASP.NET Application</title>
+
+    <style type="text/css">
+        .auto-style2 {
+            font-size: x-large;
+        }
+        .auto-style5 {
+            text-decoration: none;
+        }
+    </style>
+
+
+    </head>
+<body>
+    <form id="form1" runat="server">
+        <div id="rectangletop" runat="server">
+            <img runat="server" id="truck" src="Assets/Images/trucking.png"/>
+            <asp:label runat="server" id="free" >Free shipping</asp:label>
+            <img runat="server" id="phone" src="Assets/Images/phone.png" />
+            <asp:label id="telephone" runat="server" >+65 65845547</asp:label>
+            <img  runat="server" id="mail" src="Assets/Images/mail.png" />
+            <a href="mailto:info@alphawolf.com" id="email">info@alphawolf.com</a>
+
+
+            <div id="loginDiv">
+                <img runat="server" id="login" src="Assets/Images/login.png" width="20"/>
+                <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <AnonymousTemplate>
+
+                        <asp:HyperLink runat="server" class="hover" NavigateUrl="~/Account/Login.aspx" >Login</asp:HyperLink>
+                        &nbsp|&nbsp 
+                        <asp:HyperLink runat="server" class="hover" NavigateUrl="~/Account/Register.aspx" >Register</asp:HyperLink>
+                    </AnonymousTemplate>
+
+                    <LoggedInTemplate>
+
+                            <asp:label runat="server" >Hello, <%: Context.User.Identity.GetUserName()  %>!</asp:label>
+                        &nbsp|&nbsp
+                            <asp:LoginStatus class="hover" runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/Account/Login.aspx" OnLoggingOut="Unnamed_LoggingOut" />
+                                    
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div id="loginImg">
+            </div>
+        </div>
+        <div id="rectangletitle" runat="server">
+        <asp:Hyperlink ID="title" runat="server" Font-Bold="True" Font-Names="HYPMokGak-Bold" Font-Size="45px" Text="AlphaNature." CssClass="auto-style5" ForeColor="Black" NavigateUrl="~/Assets/Forms/Home.aspx"></asp:Hyperlink>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HLhome" runat="server" CssClass="auto-style2" Font-Names="Rockwell" NavigateUrl="~/Assets/Forms/Home.aspx">Home</asp:HyperLink>
+        <asp:HyperLink ID="HLorder" runat="server" CssClass="auto-style2" Font-Names="Rockwell" NavigateUrl="~/Assets/Forms/Order.aspx">Order</asp:HyperLink>
+        <asp:HyperLink ID="HLcontact" runat="server" CssClass="auto-style2" Font-Names="Rockwell" NavigateUrl="~/Assets/Forms/Contact.aspx">Contact</asp:HyperLink>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+    </form>
+</body>
+</html>
